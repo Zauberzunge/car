@@ -4,6 +4,7 @@ class Car:
         self.speed = speed
         self.gef_km = 0
         self.time = 0
+        self.tankinhalt = 30
 
     def status(self):
         print("Ich fahre %u km/h" %(self.speed))
@@ -23,6 +24,9 @@ class Car:
             return self.gef_km / self.time
         else:
             pass
+            
+    def tanken(self, liter):
+        self.tankinhalt = self.tankinhalt + liter
 
 if __name__ == "__main__":
     my_car = Car()
