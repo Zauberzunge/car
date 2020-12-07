@@ -53,7 +53,7 @@ if __name__ == "__main__":
         if tankvorgang == "J":
             liter = int(input("Wieviele Liter haben Sie getankt ?"))
             my_car.tanken(liter)
-            print("In Ihrem Tank befinden sich jetzt %u Liter Sprit." %(my_car.tankinhalt))
+            print("In Ihrem Tank befinden sich jetzt %i Liter Sprit." %(my_car.tankinhalt))
         
         my_car.tacho()
         my_car.status()
