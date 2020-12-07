@@ -5,6 +5,8 @@ class Car:
         self.gef_km = 0
         self.time = 0
         self.tankinhalt = 30
+        self.verbrauch_100km = 8
+        self.verbrauch = 0.0
 
     def status(self):
         print("Ich fahre %u km/h" %(self.speed))
@@ -28,6 +30,10 @@ class Car:
     def tanken(self, liter):
         self.tankinhalt = self.tankinhalt + liter
         return self.tankinhalt
+
+    def status_verbrauch(self):
+        self.verbrauch = float(self.gef_km * self.verbrauch_100km / 100)
+        print("Der Verbrauch beträgt %f Liter." %(self.verbrauch))
 
 if __name__ == "__main__":
     my_car = Car()
@@ -57,3 +63,4 @@ if __name__ == "__main__":
         
         my_car.tacho()
         my_car.status()
+        my_car.status_verbrauch()
