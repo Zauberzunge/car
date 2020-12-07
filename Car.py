@@ -27,6 +27,7 @@ class Car:
             
     def tanken(self, liter):
         self.tankinhalt = self.tankinhalt + liter
+        return self.tankinhalt
 
 if __name__ == "__main__":
     my_car = Car()
@@ -47,5 +48,12 @@ if __name__ == "__main__":
         elif action == "D":
             print("Das Auto hat eine Durchschnittsgeschwindigkeit von {} km/h." . format(my_car.avg_speed()))
 
+
+        tankvorgang = input("Haben Sie getankt ? [J]a oder [N]ein").upper()
+        if tankvorgang == "J":
+            liter = int(input("Wieviele Liter haben Sie getankt ?"))
+            my_car.tanken(liter)
+            print("In Ihrem Tank befinden sich jetzt %u Liter Sprit." %(my_car.tankinhalt))
+        
         my_car.tacho()
         my_car.status()
