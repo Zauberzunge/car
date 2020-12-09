@@ -1,3 +1,4 @@
+# Es wird eine Klasse "Car" erstellt
 class Car:
 
     def __init__(self, speed=0):
