@@ -26,7 +26,7 @@ class Car:
             return self.gef_km / self.time
         else:
             pass
-            
+
     def tanken(self, liter):
         self.tankinhalt = self.tankinhalt + liter
         return self.tankinhalt
@@ -60,7 +60,7 @@ if __name__ == "__main__":
             liter = int(input("Wieviele Liter haben Sie getankt ?"))
             my_car.tanken(liter)
             print("In Ihrem Tank befinden sich jetzt %i Liter Sprit." %(my_car.tankinhalt))
-        
+
         my_car.tacho()
         my_car.status()
         my_car.status_verbrauch()
