@@ -38,7 +38,7 @@ class Car:
         print("Der Verbrauch beträgt %f Liter." %(self.verbrauch))
 
 if __name__ == "__main__":
-    my_car = Car()
+    my_car = Car() # ein neues Objekt der Klasse "Car" wird erzeugt
     print("Ich bin ein Auto")
 
     while True:
