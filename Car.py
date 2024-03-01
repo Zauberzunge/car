@@ -7,7 +7,7 @@ class Car:
         self.gef_km = 0
         self.time = 0
         self.tankinhalt = 30
-        self.verbrauch_100km = 8
+        self.verbrauch_100km = 9
         self.verbrauch = 0.0
 
     def status(self):
